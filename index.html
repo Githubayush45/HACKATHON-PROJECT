@@ -18,8 +18,23 @@
         </aside>
         <main class="main-content">
             <div class="search-section">
-                <input type="text" class="search-bar" placeholder="Search for eco-friendly alternatives...">
+                <input type="text" class="search-bar" placeholder="Search for eco-friendly alternatives..." id="search-input">
+                <button class="dropdown-btn" onclick="toggleDropdown()">▼</button>
                 <button class="search-btn" onclick="searchProduct()">Search</button>
+                
+                <!-- Dropdown list for product suggestions -->
+                <ul id="dropdown-list" class="dropdown-list">
+                    <li onclick="selectProduct('handbag')">Handbag</li>
+                    <li onclick="selectProduct('plastic bag')">Plastic Bag</li>
+                    <li onclick="selectProduct('water bottle')">Water Bottle</li>
+                    <li onclick="selectProduct('toothbrush')">Toothbrush</li>
+                    <li onclick="selectProduct('cosmetic products')">Cosmetic Products</li>
+                    <li onclick="selectProduct('fast fashion clothing')">Fast Fashion Clothing</li>
+                    <li onclick="selectProduct('shampoo bottle')">Shampoo Bottle</li>
+                    <li onclick="selectProduct('disposable cutlery')">Disposable Cutlery</li>
+                    <li onclick="selectProduct('paper towels')">Paper Towels</li>
+                    <li onclick="selectProduct('cigarettes')">Cigarettes</li>
+                </ul>
             </div>
             <div class="results-section" id="results-section" style="display: none;">
                 <h2 class="results-title">Suggested Alternatives</h2>

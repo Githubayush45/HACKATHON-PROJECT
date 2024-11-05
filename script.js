@@ -223,3 +223,14 @@ const products = {
 
     document.getElementById("results-section").style.display = "block"; // Show results section
 }
+// Toggle the visibility of the dropdown list
+function toggleDropdown() {
+    const dropdownList = document.getElementById("dropdown-list");
+    dropdownList.style.display = dropdownList.style.display === "block" ? "none" : "block";
+}
+
+// Set the search input value when a product is clicked from the dropdown
+function selectProduct(product) {
+    document.getElementById("search-input").value = product;
+    document.getElementById("dropdown-list").style.display = "none"; // Hide the dropdown after selection
+}
