@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoLogic</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="title">EcoShofify 🌿</h1>
+        </div>
+        <aside class="sidebar">
+            <button class="menu-btn active">Product Alternatives</button>
+            <button class="menu-btn">Eco Score Calculator</button>
+            <button class="menu-btn">AR Integration</button>
+        </aside>
+        <main class="main-content">
+            <div class="search-section">
+                <input type="text" class="search-bar" placeholder="Search for eco-friendly alternatives...">
+                <button class="search-btn" onclick="searchProduct()">Search</button>
+            </div>
+            <div class="results-section" id="results-section" style="display: none;">
+                <h2 class="results-title">Suggested Alternatives</h2>
+                <div id="results"></div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
